@@ -49,4 +49,4 @@ it in **Visual Studio as Release x64**.
 **After compiling with VS you have a x64 Binary, which do not contain any C2-shellcode string or .bin file at all. After execution 
 the C2-shellcode is downloaded and executed in the memory of the targeted host.** 
 At the moment the execution of the shellcode by using Create Thread is done with WIN32 APIs.
-But despite not using syscalls, from my past experience the POC will do a nice job 😉.
+But despite not using syscalls, the POC will do a nice job 😉.
