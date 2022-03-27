@@ -36,7 +36,7 @@ we need from the HEX-shellcode string we need double quotes.
 
 ![image](https://user-images.githubusercontent.com/50073731/160274319-9b4284a3-7368-45f1-9eac-fd8456145d5e.png)
 
-At the end you can upload the shellcode file without any file ending for example called as shellocde, update or whatever on your webserver. 
+At the end you can save the file with the stageless MSF-shellcode as a file without any filetype ending, we call it for example **update** and then upload the MSF-Shellcode File on your webserver of choice. 
 
 **3. Change the link in the c++ POC to your MSF-payload**
 In this step we change the link in the POC to the link of the webserver on which we have hosted our stageless MSF-Shellcode and compile
