@@ -41,10 +41,10 @@ At the end you can upload the shellcode file without any file ending for example
 **3. Change the link in the c++ POC to your MSF-payload**
 In this step we change the link in the POC to the link of the webserver on which we have hosted our stageless MSF-Shellcode and compile
 it in **Visual Studio as Release x64**.
-![image](https://user-images.githubusercontent.com/50073731/160274011-82fd0f13-a52c-4f90-93bd-01d39a9872d9.png)
 
+![image](https://user-images.githubusercontent.com/50073731/160273474-4faa8840-1e75-404e-8056-d59aab4d1e5d.png)
 
-At the end you should have a x64 .exe which do not contain direclty an MSF-C2 shellcode at all and because of that 
-most AV/EPP/EDR will not statically flag this POC after the POC was copied to disk on the target. This POC do currently 
-not use syscalls (Native APIs) for executing the shellcode, but despite from my past experience the POC will do a nice job 😉
+**At the end you should have a x64 .exe which do not contain direclty an MSF-C2 shellcode at all and because of that 
+most AV/EPP/EDR will not statically flag this POC after the POC was copied to disk on the target.** This POC do **currently 
+not use syscalls (Native APIs)** for executing the shellcode, but despite from my past experience the POC will do a nice job 😉
 
