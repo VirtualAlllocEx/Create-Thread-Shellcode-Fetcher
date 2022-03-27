@@ -32,3 +32,6 @@ Based on the code in the c++ POC the hosted shellcode must be in HEX-Format. To 
 the line operation function in Notpad++ join lines and then remove not spaces and the double quotes in the string. Only at the beginning and the end
 we need from the HEX-shellcode string we need double quotes.
 
+![image](https://user-images.githubusercontent.com/50073731/160274172-4a793332-db0d-465f-b6e9-aa3cf024c8a3.png)
+
+
