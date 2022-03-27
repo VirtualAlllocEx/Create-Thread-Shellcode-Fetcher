@@ -7,9 +7,8 @@ This means, no matter which clever technique you would use to bypass prevention/
 your .exe POC will get flagged before you can ever execute it. Also if you want to compile a c++ POC in Visual Studio it isn't possible to include stageless shellcode in a char string, because the string is limited in length (always stay stageless if possible 😉). 
 From my experience, depending on the AV/EPP/EDR it isn't often the most important thing to only care about how to bypass the dynamically prevention/detection of an AV/EPP/EDR. At least equally important is to care about how could I bypass the statically prevetion/detection, to maybe break the chain of a maybe following connected dynamicall or in-memory prevention/detection. 
 
-This POC gives you the possibility to compile a .exe which downloads and executed your staged or stageless shellcode from a webserver (for example, Github raw link of hosted stageless MSF-shellcode).![image](https://user-images.githubusercontent.com/50073731/160273459-f11c4ea0-93b7-4405-bc89-80e49025bd11.png)
-
-
+This POC gives you the possibility to compile a .exe which downloads and executed your staged or stageless shellcode from a webserver (for example, Github raw link of hosted stageless MSF-shellcode).
+![image](https://user-images.githubusercontent.com/50073731/160273474-4faa8840-1e75-404e-8056-d59aab4d1e5d.png)
 By that POC we have the advantage, that the shellcode for the C2 reverse shell isn't included as string or as .bin file in the POC.
 Trought that we don't have the problem of statically detection of the C2 shellcode by an AV/EPP/EDR, because the shellcode is hosted 
 on a webserver. 
