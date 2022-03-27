@@ -10,7 +10,7 @@ From my experience, depending on the AV/EPP/EDR it isn't often the most importan
 
 **This POC gives you the possibility to compile a .exe which downloads and executed your staged or stageless shellcode from a webserver** (for example, Github raw link of hosted stageless MSF-shellcode).
 
-![image](https://user-images.githubusercontent.com/50073731/160273474-4faa8840-1e75-404e-8056-d59aab4d1e5d.png)
+![image](https://user-images.githubusercontent.com/50073731/160274700-173f342f-1fd8-4080-8e78-d832129a99c6.png)
 
 By that POC we have the advantage, that the shellcode for the C2 reverse shell isn't included as string or as .bin file in the POC.
 Trought that we don't have the problem of statically detection of the C2 shellcode by an AV/EPP/EDR, because the shellcode is hosted 
@@ -42,7 +42,7 @@ At the end you can upload the shellcode file without any file ending for example
 In this step we change the link in the POC to the link of the webserver on which we have hosted our stageless MSF-Shellcode and compile
 it in **Visual Studio as Release x64**.
 
-![image](https://user-images.githubusercontent.com/50073731/160273474-4faa8840-1e75-404e-8056-d59aab4d1e5d.png)
+![image](https://user-images.githubusercontent.com/50073731/160274705-7c608ab1-1137-4f0f-8152-8a722de6a270.png)
 
 **At the end you should have a x64 .exe which do not contain direclty an MSF-C2 shellcode at all and because of that 
 most AV/EPP/EDR will not statically flag this POC after the POC was copied to disk on the target.** This POC do **currently 
