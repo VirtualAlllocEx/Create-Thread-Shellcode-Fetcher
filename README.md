@@ -48,5 +48,5 @@ it in **Visual Studio as Release x64**.
 
 **At the end you should have a x64 .exe which do not contain direclty an MSF-C2 shellcode at all and because of that 
 most AV/EPP/EDR will not statically flag this POC after the POC was copied to disk on the target.** This POC do **currently 
-not use syscalls (Native APIs)** for executing the shellcode, but despite from my past experience the POC will do a nice job 😉
+not use syscalls (Native APIs)** for executing the shellcode, but despite from my past experience the POC will do a nice job 😉.
 
