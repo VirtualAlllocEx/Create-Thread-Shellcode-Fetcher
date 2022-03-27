@@ -8,12 +8,12 @@ your .exe POC will get flagged before you can ever execute it. Also if you want 
 
 From my experience, depending on the AV/EPP/EDR it isn't often the most important thing to only care about how to bypass the dynamically prevention/detection of an AV/EPP/EDR. At least equally important is to care about how could I bypass the statically prevetion/detection, to maybe break the chain of a maybe following connected dynamicall or in-memory prevention/detection. 
 
-**This POC gives you the possibility to compile a .exe which downloads and executed your stageless C2-shellcode from a webserver**
+**This POC gives you the possibility to compile a .exe which downloads and executed your stageless C2-shellcode from a webserver.**
 
 ![image](https://user-images.githubusercontent.com/50073731/160274700-173f342f-1fd8-4080-8e78-d832129a99c6.png)
 
 By that POC we have the advantage, that the shellcode for the C2 reverse shell isn't included as string or as .bin file in the POC.
-Trought that we don't have the problem of statically detection of the C2 shellcode by an AV/EPP/EDR, because the shellcode is hosted 
+Trough that, we don't have the problem of statically detection of the C2 shellcode by an AV/EPP/EDR, because the complete C2-shellcode is hosted 
 on a webserver. 
 
 
