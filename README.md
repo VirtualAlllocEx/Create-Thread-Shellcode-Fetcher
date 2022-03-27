@@ -46,6 +46,7 @@ it in **Visual Studio as Release x64**.
 
 ![image](https://user-images.githubusercontent.com/50073731/160274705-7c608ab1-1137-4f0f-8152-8a722de6a270.png)
 
-**At the end you should have a x64 .exe which do not contain direclty an MSF-C2 shellcode at all and because of that 
-most AV/EPP/EDR will not statically flag this POC after the POC was copied to disk on the target.** This POC do **currently 
-not use syscalls (Native APIs)** for executing the shellcode, but despite from my past experience the POC will do a nice job 😉.
+**After compiling with VS you have a x64 Binary, which do not contain any C2-shellcode string or .bin file at all. After execution 
+the C2-shellcode is downloaded and executed in the memory of the targeted host.** 
+At the moment the execution of the shellcode by using Create Thread is done with WIN32 APIs.
+But despite not using syscalls, from my past experience the POC will do a nice job 😉.
