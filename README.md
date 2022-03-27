@@ -36,6 +36,8 @@ we need from the HEX-shellcode string we need double quotes.
 
 ![image](https://user-images.githubusercontent.com/50073731/160274319-9b4284a3-7368-45f1-9eac-fd8456145d5e.png)
 
+![image](https://user-images.githubusercontent.com/50073731/160275882-e1ef7a31-4c07-4fd8-8d51-f1840b9ade89.png)
+
 At the end you can save the file with the stageless MSF-shellcode as a file without any filetype ending, we call it for example **update** and then upload the MSF-Shellcode File on your webserver of choice. 
 
 **3. Change the link in the c++ POC to your MSF-payload**
