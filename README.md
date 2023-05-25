@@ -1,4 +1,4 @@
-# Create_Thread-Shellcode-Fetcher
+# Create-Thread-Shellcode-Fetcher
 Also if you use for example **syscalls (nativ APIs)** to execute C2-shellcode with a .exe, you often have the problem, that 
 your **compiled .exe** gets **statically flagged by the AV/EPP/EDR**. Many times the reason for this is, that the **C2-shellcode** 
 has to be directly **included as string or as a .bin ressource** in the c++ POC and by that the well known C2-shellcode 
